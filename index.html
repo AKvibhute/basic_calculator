@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <form>
+            <div>
+                <input type="text" id="display" readonly>
+            </div>
+            
+            <div>
+                <a href="javascript:void(0)" class="back-button" onclick="showHistory()">&#8634;</a>
+                <a href="javascript:void(0)" class="btn" onclick="togglePopup()">&#8801;</a>
+                <a href="javascript:void(0)" class="btn" onclick="back()">&#8592;</a>
+                <div class="Button" onclick="togglePopup()">
+                    <div id="B-Popup" class="B-popup">
+                        <div>
+                            <button type="button" class="EXPO" onclick="appendToDisplay('^')">&#94;</button>
+                            <button type="button" class="ROOT" onclick="appendToDisplay('√')">&#8730;</button>
+                            <button type="button" class="OPENBRC" onclick="appendToDisplay('(')">(</button>  
+                            <button type="button" class="CLOSEBRC" onclick="appendToDisplay(')')">)</button>  
+                        </div>
+                    </div>
+                </div>
+                <div id="historyPopup" class="history-popup">
+                    <h3>HISTORY</h3>
+                    <hr>
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeHistory()">×</a>
+                    <div id="historyContent"></div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button type="button" class="AC" style="color: #FFDB58;" onclick="allClear()">AC</button>
+                <button type="button" class="C" style="color: #FFDB58;" onclick="clearDisplay()">C</button>
+                <button type="button" class="NEGATION" onclick="appendToDisplay('-')">(-)</button>
+                <button type="button" class="division" onclick="appendToDisplay('/')">/</button>
+            </div>
+            <div class="button-row">
+                <button type="button" class="ONE" onclick="appendToDisplay('1')">1</button>
+                <button type="button" class="TWO" onclick="appendToDisplay('2')">2</button>
+                <button type="button" class="THREE" onclick="appendToDisplay('3')">3</button>
+                <button type="button" class="multiply" onclick="appendToDisplay('*')">*</button>
+            </div>
+            <div class="button-row">
+                <button type="button" class="FOUR" onclick="appendToDisplay('4')">4</button>
+                <button type="button" class="FIVE" onclick="appendToDisplay('5')">5</button>
+                <button type="button" class="SIX" onclick="appendToDisplay('6')">6</button>
+                <button type="button" class="subtract" onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div class="button-row">
+                <button type="button" class="SEVEN" onclick="appendToDisplay('7')">7</button>
+                <button type="button" class="EIGHT" onclick="appendToDisplay('8')">8</button>
+                <button type="button" class="NINE" onclick="appendToDisplay('9')">9</button>
+                <button type="button" class="add" onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div class="button-row">
+                <button type="button" class="PERCENTAGE" onclick="appendToDisplay('%')">%</button>
+                <button type="button" class="ZERO" onclick="appendToDisplay('0')">0</button>
+                <button type="button" class="DECIMAL" onclick="appendToDisplay('.')">.</button>
+                <button type="button" class="EQUAL" onclick="calculate()">=</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>

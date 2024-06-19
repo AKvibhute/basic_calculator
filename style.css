@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif; 
+    margin:45px 0px 0px 0px;
+  /* backroung coour */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: rgb(233, 231, 231);
+    position: relative;
+    /* the container in which the cal is made */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input[ id="display"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* this is the input part */
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* the adjusment row wise */
+}
+
+button {
+    flex: 1;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #b1adad;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* this is the css for the bottons */
+}
+
+button:hover {
+    background-color: #5a5858;
+    /* if my curcer is on that number then the number will change the colour */
+}
+
+.EQUAL {
+    background-color: #FFDB58;  
+    border: none;                
+    padding: 10px 20px;           
+    cursor: pointer;          
+  }
+
+  .EQUAL:hover {
+    background-color: #ecb024;  /* Deep mustard yellow on hover */
+  }
+
+  .container .back-button:first-child {
+    position: static;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color:#b1ADAD;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .history-popup {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s;
+    z-index: 1000;
+  }
+  
+  .history-popup.open {
+    right: 0;
+  }
+  
+  .history-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #historyContent {
+    padding: 10px;
+
+  }
+  .btn {
+    position: static;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color:#b1ADAD;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    flex-direction: column;
+    
+  }
+
+/* Style for the popup */
+.B-popup {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: rgb(233, 231, 231);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position:absolute;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
