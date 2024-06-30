@@ -20,7 +20,7 @@ Clock Sign (History): Opens the history page where you can see all previously pe
 History Page
 The history page allows you to review all the operations you have performed. This is useful for keeping track of your calculations. The history page looks like this:
 ![image](https://github.com/AKvibhute/basic_calculator/assets/150135900/641c090c-7b75-4c32-bcfe-8a9c0e9fed1a)
-AC is all clear , c is clear the display , <- arrow means the go one digit back ,clock  sign is the history ,3 lines are the additional oprations like { (,),^, }
+3 lines are the additional oprations like { (,),^, }
 ![image](https://github.com/AKvibhute/basic_calculator/assets/150135900/9ce7d64e-dab0-4a16-bd72-576dd58438c0)
 Additional Operations
 When you press the button with three lines, you get access to additional operations that are essential for more complex calculations. These operations include:
